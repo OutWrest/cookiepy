@@ -2,13 +2,12 @@ import requests as re
 from time import sleep
 import argparse
 
-parser = argparse.ArgumentParser(description='Times cookies to check when or if they expire.')
-parser.add_argument('-request', metavar='N', type=str, nargs='+', help='BurpSuite text request')
+parser = argparse.ArgumentParser(description='<Required> Times cookies to check when or if they expire by replaying Burp Suite request.')
+parser.add_argument('request', type=str, help='BurpSuite request location')
+parser.add_argument('-s', '--seconds', type=int, help='Amount of seconds inbetween each request')
 
-
-def main(min):
+def main(args):
     exit()
-    s = re.Session()
 
     url = 'https://application.local:5001/{}'
     login = 'Account/Login/'
@@ -26,20 +25,28 @@ def main(min):
         'Answer2': 'a'
     }
 
-    s.post(url.format(login), loginData, verify=False)
-    s.post(url.format(cq), cqData, verify=False)
+    re.post(url.format(login), loginData, verify=False)
+    re.post(url.format(cq), cqData, verify=False)
 
     for i in range(10000):
-        r = s.get(url.format(manage), verify=False).text
+        r = re.get(url.format(manage), verify=False).text
 
         if 'Some important content' in r:
-            sleep(i*min%(5<<6))
+            sleep(i*s%(5<<6))
             continue
         break
 
-
+def parse(requestfile):
+    # Parses requestfile, returns a request dictionary for replay.
+    pass
 
 
 if __name__ == '__main__':
     args = parser.parse_args()
-    main(2)
+
+    try:
+        request = parse(args.request)
+    except Exception as e:
+        print("[{}] while parsing file {}".format(e,args.request))
+
+    main(args)
