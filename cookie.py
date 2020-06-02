@@ -34,8 +34,7 @@ def main(args):
 
         if r.status_code == 200:
             status, subdomain = 'Sucessful ping', method[1].strip()
-            #print('[Sucessful ping]: Code {} -> ({}) | [Active for]: {} seconds | [Current Time]: {}.'.format(r.status_code, method[1].strip(), i*args.seconds, datetime.datetime.now()))
-        
+   
         elif r.status_code >= 300 and r.status_code <= 400:
             status, subdomain = 'Redirection', r.headers['Location']
 
