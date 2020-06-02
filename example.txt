@@ -1,0 +1,10 @@
+GET /Manage HTTP/1.1
+Host: application.local:5001
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Referer: https://application.local:5001/Manage
+Cookie: .AspNetCore.Antiforgery.9L2gFlgCpZw=CfDJ8I-mu7nAx-xNinCN0EJ54flPukcE4Ru9ZRJ-vV2i8XRS7uWfkz15AGL4bQUf7Df0i39-RxS4t40iJ2Sb60aV_XOM90HhSozf5wOSiDwUyHG1faOM8bGzX1O9iAaQZr10QpwSh3OG_4bg53zPUeHUNKY; .AspNetCore.Identity.Application=CfDJ8I-mu7nAx-xNinCN0EJ54fmyQe0jdc4EImTVgAufzv6xAk-DBO_R0ftLQTMHeSynGWLMc85MsHGbzrg0abZ2T9tKXJAAFPBLgYVISxsXC6UK0ePNpnupGQVc8hMG6-O6Ykn2BEXJudnHuIgGnesxCH0NNgzLB2feR5E1aewhqW1I5PB1_e0lnaej3x5VITQCPDnZgMW_RwZfD0KKVU_NeEVGywIzYr5NJOZcy_JZQxWU52A6lqM7h6zZoCKmO59w7unB3_Nd6GxIx5bX32xQ1CqmldZZzUxUa5dwag8nFS3e06yi1nCnkQ3xb0g5DXgcN1b6oXlSCAxi5vnCkIA6YZ78S_0sgDt6luGwvyTzwCGggUuPvFsHHUNsUtl7c7gGYLNIezKt4072L5V1UV9n30rypXBPDamYEWya2hLeC62PNVWdSrojLiY9n6aoXNO5nadhcl3IVD_H82CGI-1WDMwjYt-Sgr7lzbUDNGfrGK3Q93xTJwPfp2ClwH8JcGHgnA7pr876VGuW8IDrK8NEnZCXKAhlsQaxSf2UuMoRiXnBcESHQz4VQp7JeMBEg3owpoWdK1zlWcCoc8rQ0HnDWLhAF--C75OPaOG_EsH8QExa0yvauYRM4Blm5Dao2Pf_INnbtFAF9gNpJwDzEGyWJjTUMMgDi9EpTUQVH_uF11UP_MrE2Yua-5CNwTEVAHxNCQ
+Upgrade-Insecure-Requests: 1
